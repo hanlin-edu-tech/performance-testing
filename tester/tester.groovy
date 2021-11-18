@@ -8,12 +8,15 @@ def results
 GParsPool.withPool(64) {
     results = (1..10240).collectParallel {
         def startTime = System.currentTimeMillis()
+        def postConnection = null
         try {
-            def postConnection = new URL('http://localhost:8080/hello').openConnection()
+            postConnection = new URL('http://localhost:8080/hello').openConnection()
             postConnection.requestMethod = 'POST'
             postConnection.setRequestProperty('Content-Type', 'application/json')
             postConnection.doOutput = true
-            postConnection.getOutputStream().write(message.getBytes("UTF-8"))
+            def stream = postConnection.getOutputStream()
+            stream.write(message.getBytes("UTF-8"))
+            stream.flush()
             if (postConnection.responseCode == 200) {
                 return [true, System.currentTimeMillis() - startTime]
             } else {
@@ -21,6 +24,8 @@ GParsPool.withPool(64) {
             }
         } catch (e) {
             return [false, System.currentTimeMillis() - startTime]
+        } finally {
+            postConnection.disconnect()
         }
     }
 }
