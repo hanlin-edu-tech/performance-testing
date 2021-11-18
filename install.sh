@@ -1,4 +1,4 @@
-#! bash
+#! /bin/bash
 
 cd quarkus
 ./gradlew build

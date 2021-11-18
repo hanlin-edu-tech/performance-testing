@@ -1,0 +1,189 @@
+*** Performance Testing ***
+
+
+====== quarkus-jvm ======
+
+=== 1 CPUs and 256m memory ===
+= init =
+Success: 10240 Avg: 48.06552734375 Stdev: 74.82422350680218
+Slow: 366 Avg: 303.0464480874 Stdev: 184.23577962545366
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 23.90029296875 Stdev: 31.82238283249281
+Slow: 246 Avg: 99.0040650407 Stdev: 16.864525736170492
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 1 CPUs and 1g memory ===
+= init =
+Success: 10240 Avg: 49.27958984375 Stdev: 80.15833811452188
+Slow: 119 Avg: 553.1344537815 Stdev: 272.45979098058154
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 22.00380859375 Stdev: 30.98287516859506
+Slow: 307 Avg: 95.6872964169 Stdev: 20.0158418024051
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 4 CPUs and 256m memory ===
+= init =
+Success: 10240 Avg: 18.9783203125 Stdev: 39.32171665671553
+Slow: 128 Avg: 270.4609375 Stdev: 159.1628147894872
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 8.944140625 Stdev: 15.643828586156417
+Slow: 709 Avg: 55.8363892807 Stdev: 29.387654051882237
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 4 CPUs and 1g memory ===
+= init =
+Success: 10240 Avg: 20.49521484375 Stdev: 43.752388368978096
+Slow: 80 Avg: 413.7625 Stdev: 152.5840082990599
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 8.333203125 Stdev: 13.627611643107757
+Slow: 752 Avg: 51.6276595745 Stdev: 17.81521308184669
+Failure: 0 Avg: 0 Stdev: 0
+
+
+====== quarkus-native ======
+
+=== 1 CPUs and 256m memory ===
+= init =
+Success: 10240 Avg: 15.3974609375 Stdev: 23.56695029079551
+Slow: 1080 Avg: 72.6101851852 Stdev: 21.69522841588843
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 14.8423828125 Stdev: 23.565742793459247
+Slow: 1177 Avg: 71.9158878505 Stdev: 22.03284254068874
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 1 CPUs and 1g memory ===
+= init =
+Success: 10240 Avg: 15.092578125 Stdev: 24.352837072858563
+Slow: 1135 Avg: 72.8792951542 Stdev: 24.962731717730623
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 15.10205078125 Stdev: 23.25028757551893
+Slow: 1330 Avg: 70.3661654135 Stdev: 14.92012032632442
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 4 CPUs and 256m memory ===
+= init =
+Success: 10240 Avg: 6.22607421875 Stdev: 14.054647708065515
+Slow: 158 Avg: 90.1898734177 Stdev: 59.058769380577246
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 5.666015625 Stdev: 11.073821903026312
+Slow: 203 Avg: 61.7635467980 Stdev: 45.92808898326796
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 4 CPUs and 1g memory ===
+= init =
+Success: 10240 Avg: 6.12431640625 Stdev: 15.256618407639541
+Slow: 103 Avg: 129.0582524272 Stdev: 69.1359594358256
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 5.755078125 Stdev: 13.543863824022576
+Slow: 68 Avg: 159.1470588235 Stdev: 30.04785472059397
+Failure: 0 Avg: 0 Stdev: 0
+
+
+====== nodejs-express ======
+
+=== 1 CPUs and 256m memory ===
+= init =
+Success: 10240 Avg: 42.2875 Stdev: 25.194075485988456
+Slow: 227 Avg: 135.7312775330 Stdev: 59.99036087504568
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 41.79033203125 Stdev: 22.664710773617497
+Slow: 238 Avg: 129.3361344538 Stdev: 51.72538282967423
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 1 CPUs and 1g memory ===
+= init =
+Success: 10240 Avg: 38.99287109375 Stdev: 23.772850085149933
+Slow: 291 Avg: 117.6391752577 Stdev: 51.485622814129705
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 38.12607421875 Stdev: 18.915214877475446
+Slow: 241 Avg: 104.8630705394 Stdev: 37.92616078908028
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 4 CPUs and 256m memory ===
+= init =
+Success: 10240 Avg: 36.00244140625 Stdev: 21.26709612918118
+Slow: 101 Avg: 193.5742574257 Stdev: 89.11558186250633
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 33.40966796875 Stdev: 14.512060726211542
+Slow: 89 Avg: 138.6292134831 Stdev: 50.472625799102026
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 4 CPUs and 1g memory ===
+= init =
+Success: 10240 Avg: 32.48681640625 Stdev: 20.250521559251396
+Slow: 126 Avg: 162.2222222222 Stdev: 82.72159465473466
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 31.96552734375 Stdev: 16.20549629846485
+Slow: 111 Avg: 140.6126126126 Stdev: 59.33696857335937
+Failure: 0 Avg: 0 Stdev: 0
+
+
+====== nodejs-fastify ======
+
+=== 1 CPUs and 256m memory ===
+= init =
+Success: 10240 Avg: 23.102734375 Stdev: 23.168170614989254
+Slow: 170 Avg: 138.8705882353 Stdev: 73.90955423186183
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 22.7740234375 Stdev: 21.596674699259857
+Slow: 316 Avg: 103.6550632911 Stdev: 60.675912479616485
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 1 CPUs and 1g memory ===
+= init =
+Success: 10240 Avg: 23.64541015625 Stdev: 22.352644918766625
+Slow: 217 Avg: 120.1612903226 Stdev: 68.63859171341903
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 21.67470703125 Stdev: 17.748741336700803
+Slow: 489 Avg: 79.4110429448 Stdev: 26.324207380221786
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 4 CPUs and 256m memory ===
+= init =
+Success: 10240 Avg: 19.9359375 Stdev: 20.780131052691473
+Slow: 139 Avg: 153.3741007194 Stdev: 95.34736443172794
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 18.492578125 Stdev: 16.926512645799544
+Slow: 85 Avg: 168.8823529412 Stdev: 65.15154710086212
+Failure: 0 Avg: 0 Stdev: 0
+
+=== 4 CPUs and 1g memory ===
+= init =
+Success: 10240 Avg: 18.78916015625 Stdev: 21.140024930118223
+Slow: 80 Avg: 220.1875 Stdev: 80.47785979834156
+Failure: 0 Avg: 0 Stdev: 0
+
+= warmup =
+Success: 10240 Avg: 17.280078125 Stdev: 16.967571996509818
+Slow: 93 Avg: 158.0860215054 Stdev: 66.88661007126629
+Failure: 0 Avg: 0 Stdev: 0
